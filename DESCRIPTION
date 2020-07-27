@@ -10,3 +10,5 @@ Description: Template for C-MOOR tutorials
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/C-MOOR/cmoorUtils
+BugReports: https://github.com/C-MOOR/cmoorUtils/issues
