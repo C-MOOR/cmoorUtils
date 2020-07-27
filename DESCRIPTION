@@ -7,8 +7,10 @@ Authors@R:
            role = c("aut", "cre"),
            email = "katherinecox@jhu.edu",
 Description: Template for C-MOOR tutorials
-License: What license it uses
+License: CCBY-4.0
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/C-MOOR/cmoorUtils
 BugReports: https://github.com/C-MOOR/cmoorUtils/issues
+Imports: 
+    learnr
