@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Katherine",
            family = "Cox",
            role = c("aut", "cre"),
-           email = "katherinecox@jhu.edu",
+           email = "katherinecox@jhu.edu"
 Description: Template for C-MOOR tutorials
 License: CCBY-4.0
 Encoding: UTF-8
