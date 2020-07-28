@@ -2,12 +2,16 @@
 title: "Tutorial Title"
 output:
   learnr::tutorial:
+    css: css/cmoor.css
     progressive: true
     version: 1.0
 subtitle: |
   | ![](images/cmoor_logo_notext.png){width=60%} ![](images/Clovis_logo.jpg){width=38%}
   | [Get Help](https://c-moor.slack.com/)
 runtime: shiny_prerendered
+author:
+  - "First Last"
+  - "[First Last](https://example.com/)"
 learning_goals:
   - "Goal 1"
   - "Goal 2"
@@ -20,7 +24,55 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-## Test
+## Welcome {.splashpage}
+
+![](images/cmoor_logo.png){width=100%}
+
+### Introduction: `r rmarkdown::metadata$title`
+
+Insert a 3-5 sentence paragraph introducing the tutorial, e.g.
+
+- What's the big picture goal?
+- What major packages, functions, or pipelines will be covered, and what do they do?
+- What dataset(s) will learners spend a lot of time with?
+- Include a picture!
+
+
+![](images/replace_me.png){width=20%}
+
+#### Learning Goals
+
+```{r}
+# Extract learning goals from YAML and add HTML tags to make an ordered list
+learningGoals <- rmarkdown::metadata$learning_goals
+learningGoals <- paste("<li>", learningGoals, "</li>", sep="", collapse="")
+
+```
+
+<ol>
+`r learningGoals`
+</ol>
+
+#### Authors:
+
+```{r}
+# Extract authors from YAML and add HTML tags to make a list
+authorList <- rmarkdown::metadata$author
+authorList <- paste("<li>", authorList, "</li>", sep="", collapse="")
+
+```
+
+<ul>
+`r authorList`
+</ul>
+
+
+```{r}
+# Extract the tutorial version from the YAML data and store it so we can print it using inline r code below.  This can't be done directly inline because the code for extracting the YAML data uses backticks
+tv <- rmarkdown::metadata$output$`learnr::tutorial`$version
+```
+
+#### Version: `r tv`
 
 ## Topic 1
 
