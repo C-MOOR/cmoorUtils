@@ -6,9 +6,20 @@ output:
     progressive: true
     version: 1.0
 subtitle: |
-  | ![](images/cmoor_logo_notext.png){width=60%} ![](images/Clovis_logo.jpg){width=38%}
-  | [Get Help](https://c-moor.slack.com/)
+  ![](images/cmoor_logo_notext.png){width=60%} ![](images/Clovis_logo.jpg){width=38%}
+  [Get Help](https://c-moor.slack.com/)
 runtime: shiny_prerendered
+
+# The fields below will be used to create the first page of the tutorial.  You can use markdown.
+# For summary, all new lines must be indented to the same level as the first line.
+# The image must be surrounded with quotes
+summary: |
+  Insert a 3-5 sentence paragraph introducing the tutorial, e.g.
+
+  - What's the big picture goal?
+  - What major packages, functions, or pipelines will be covered, and what do they do?
+  - What dataset(s) will learners spend a lot of time with?
+image: "![](images/replace_me.png){width=20%}"
 author:
   - "First Last"
   - "[First Last](https://example.com/)"
@@ -24,21 +35,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+<!---
+Don't edit the Welcome page, it will be filled in automatically using the information from the YAML header
+Edit the rest of the document as you like
+There are some suggested sections to provide a standard order across our tutorials, but they may not all be needed/appropriate for all tutorials.
+Section 1. Content 1 has example quizes and exercises
+-->
+
 ## Welcome {.splashpage}
 
-![](images/cmoor_logo.png){width=100%}
+### `r rmarkdown::metadata$title`
 
-### Introduction: `r rmarkdown::metadata$title`
+`r rmarkdown::metadata$summary`
 
-Insert a 3-5 sentence paragraph introducing the tutorial, e.g.
-
-- What's the big picture goal?
-- What major packages, functions, or pipelines will be covered, and what do they do?
-- What dataset(s) will learners spend a lot of time with?
-- Include a picture!
-
-
-![](images/replace_me.png){width=20%}
+`r rmarkdown::metadata$image`
 
 #### Learning Goals
 
@@ -74,7 +84,23 @@ tv <- rmarkdown::metadata$output$`learnr::tutorial`$version
 
 #### Version: `r tv`
 
-## Topic 1
+## Introduction
+
+### Overview
+
+### Today's Tools
+
+
+## Prerequisites
+
+<!---
+Point to resources if they need some prerequisite knowledge
+Review anything particularly important
+Instructions for any required setup/signup/login/installation
+-->
+ 
+
+## 1. Content 1
 
 ### Exercise 
 
@@ -96,8 +122,6 @@ add <- function() {
   
 }
 ```
-
-## Topic 2
 
 ### Exercise with Hint
 
@@ -136,3 +160,8 @@ quiz(
 )
 ```
 
+## Wrap-up
+
+### Summary
+
+### What's next
