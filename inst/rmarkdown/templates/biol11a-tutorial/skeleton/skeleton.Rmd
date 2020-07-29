@@ -19,7 +19,7 @@ summary: |
   - What's the big picture goal?
   - What major packages, functions, or pipelines will be covered, and what do they do?
   - What dataset(s) will learners spend a lot of time with?
-image: "![](images/replace_me.png){width=20%}"
+image: "![](images/replace_me.png)"
 author:
   - "First Last"
   - "[First Last](https://example.com/)"
@@ -46,9 +46,16 @@ Section 1. Content 1 has example quizes and exercises
 
 ### `r rmarkdown::metadata$title`
 
-`r rmarkdown::metadata$summary`
+<div class="splashpage-container">
+  <div class="splashpage-image">
+  `r rmarkdown::metadata$image`{width=100%}
+  </div>
 
-`r rmarkdown::metadata$image`
+  `r rmarkdown::metadata$summary`
+  
+
+</div>
+
 
 #### Learning Goals
 
