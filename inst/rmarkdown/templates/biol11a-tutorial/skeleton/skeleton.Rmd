@@ -20,6 +20,7 @@ summary: |
   - What major packages, functions, or pipelines will be covered, and what do they do?
   - What dataset(s) will learners spend a lot of time with?
 image: "![](images/replace_me.png)"
+image_caption: "Welcome page image"
 author:
   - "First Last"
   - "[First Last](https://example.com/)"
@@ -27,6 +28,8 @@ learning_goals:
   - "Goal 1"
   - "Goal 2"
   - "Goal 3"
+time: "time to complete"
+prerequisites: "None"
 ---
 
 ```{r setup, include=FALSE}
@@ -47,9 +50,10 @@ Section 1. Content 1 has example quizes and exercises
 ### `r rmarkdown::metadata$title`
 
 <div class="splashpage-container">
-  <div class="splashpage-image">
+  <figure class="splashpage-image">
   `r rmarkdown::metadata$image`{width=100%}
-  </div>
+  <figcaption class="caption">`r rmarkdown::metadata$image_caption`</figcaption>
+  </figure>
 
   `r rmarkdown::metadata$summary`
   
