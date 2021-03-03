@@ -1,0 +1,4 @@
+name: C-MOOR CURE Tutorial
+description: >
+   Sets up the YAML header and Welcome page for a C-MOOR tutorial (including C-MOOR logo), and creates an outline with standard section titles.
+create_dir: TRUE

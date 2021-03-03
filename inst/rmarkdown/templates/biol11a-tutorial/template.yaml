@@ -1,4 +1,4 @@
-name: BIOL11A Tutorial
+name: C-MOOR BIOL11A Tutorial
 description: >
-   Sets up the YAML header and Welcome page for a BIOL11A tutorial (including C-MOOR and Clovis logos), and creates an outline with standard section titles.
+   Sets up the YAML header and Welcome page for a C-MOOR BIOL11A tutorial (including C-MOOR and Clovis logos), and creates an outline with standard section titles.
 create_dir: TRUE
